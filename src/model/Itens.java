@@ -5,10 +5,6 @@ public class Itens {
     private String nome;
     private String descricaoItens;
     private String descricao_Positiva;
-    private String descricao_Negativa;
-    private String comando_correto;
-    private Cena cena_Atual;
-    private Cena proxima_Cena;
 
     public Integer getId_itens() {
         return id_itens;
@@ -58,21 +54,26 @@ public class Itens {
         this.comando_correto = comando_correto;
     }
 
-    public Cena getCena_Atual() {
+    public Integer getCena_Atual() {
         return cena_Atual;
     }
 
-    public void setCena_Atual(Cena cena_Atual) {
+    public void setCena_Atual(Integer cena_Atual) {
         this.cena_Atual = cena_Atual;
     }
 
-    public Cena getProxima_Cena() {
+    public Integer getProxima_Cena() {
         return proxima_Cena;
     }
 
-    public void setProxima_Cena(Cena proxima_Cena) {
+    public void setProxima_Cena(Integer proxima_Cena) {
         this.proxima_Cena = proxima_Cena;
     }
+
+    private String descricao_Negativa;
+    private String comando_correto;
+    private Integer cena_Atual;
+    private Integer proxima_Cena;
 
     @Override
     public String toString() {

@@ -1,8 +1,11 @@
 package model;
 
+import java.util.List;
+
 public class Cena {
     private Integer id_cenas;
     private String nomeTitulo;
+    private List<Itens> itens;
 
     public Integer getId_cenas() {
         return id_cenas;
@@ -29,6 +32,14 @@ public class Cena {
     }
 
     private String descricaoCenas;
+
+    public List<Itens> getItens() {
+        return itens;
+    }
+
+    public void setItens(List<Itens> itens) {
+        this.itens = itens;
+    }
 
     @Override
     public String toString() {
